@@ -29,8 +29,8 @@ class DialogLoading {
                       height: 50,
                       child: Center(
                           child: CircularProgressIndicator(
-                            color: Colors.black,
-                          )),
+                        color: Colors.black,
+                      )),
                     ),
                     const SizedBox(height: 8),
                     Text(

@@ -13,9 +13,7 @@ class _ClassworkState extends State<Classwork> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: ColorPalette.accentBlack,
-
+      backgroundColor: ColorPalette.accentBlack,
     );
   }
 }
-

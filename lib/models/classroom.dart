@@ -10,10 +10,10 @@ class ClassRooms {
 
   ClassRooms(
       {required this.className,
-        required this.description,
-        required this.creator,
-        required this.bannerImg,
-        required this.clrs});
+      required this.description,
+      required this.creator,
+      required this.bannerImg,
+      required this.clrs});
 }
 
 List<ClassRooms> classRoomList = [

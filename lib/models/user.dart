@@ -23,24 +23,23 @@ class User {
   String? dept;
   String? gender;
 
-
   factory User.fromJson(Map<String, dynamic> json) => User(
-    fullname: json["fullname"]as String?,
-    password: json["password"]as String?,
-    studentid: json["studentid"]as String?,
-    email: json["email"]as String?,
-    age: json["age"] as String?,
-    dept: json["department"] as String?,
-    gender: json ["gender"] as String?,
-  );
+        fullname: json["fullname"] as String?,
+        password: json["password"] as String?,
+        studentid: json["studentid"] as String?,
+        email: json["email"] as String?,
+        age: json["age"] as String?,
+        dept: json["department"] as String?,
+        gender: json["gender"] as String?,
+      );
 
   Map<String, dynamic> toJson() => {
-    "fullname": fullname,
-    "password": password,
-    "studentid": studentid,
-    "email" : email,
-    "age": age,
-    "department" : dept,
-    "gender": gender,
-  };
+        "fullname": fullname,
+        "password": password,
+        "studentid": studentid,
+        "email": email,
+        "age": age,
+        "department": dept,
+        "gender": gender,
+      };
 }
