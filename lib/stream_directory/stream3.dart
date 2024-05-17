@@ -18,7 +18,8 @@ class _Stream3State extends State<Stream3> {
           child: Column(
             children: [
               Container(
-                margin: const EdgeInsets.only(left: 18, top: 18, right: 18, bottom: 8),
+                margin: const EdgeInsets.only(
+                    left: 18, top: 18, right: 18, bottom: 8),
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(25))),
                 child: const Image(
@@ -35,10 +36,14 @@ class _Stream3State extends State<Stream3> {
                       color: Colors.white,
                     ),
                     hintText: 'Share with your class...',
-                    hintStyle:
-                    TextStyle(fontSize: 12, color: ColorPalette.secondary,),
+                    hintStyle: TextStyle(
+                      fontSize: 12,
+                      color: ColorPalette.secondary,
+                    ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: ColorPalette.secondary,),
+                      borderSide: BorderSide(
+                        color: ColorPalette.secondary,
+                      ),
                       borderRadius: BorderRadius.all(
                         Radius.circular(16.0),
                       ),

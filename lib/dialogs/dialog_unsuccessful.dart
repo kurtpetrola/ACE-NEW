@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../constant/colors.dart';
 
-
 class DialogUnsuccessful {
   final String headertext;
   final String subtext;
@@ -10,9 +9,9 @@ class DialogUnsuccessful {
   final VoidCallback callback;
   DialogUnsuccessful(
       {required this.headertext,
-        required this.subtext,
-        required this.textButton,
-        required this.callback});
+      required this.subtext,
+      required this.textButton,
+      required this.callback});
 
   buildUnsuccessfulScreen(BuildContext context) {
     return showDialog(

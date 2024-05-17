@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 class AdminPassword extends StatefulWidget {
   final controller;
   final String hintText;
   final bool obscureText;
 
- AdminPassword({
+  AdminPassword({
     super.key,
     required this.controller,
     required this.hintText,
