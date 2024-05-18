@@ -1,47 +1,20 @@
 class ACEStrings {
-  static const sex = ['Male', 'Female', 'Non-Binary'];
-  static const ages = [
-    '18',
-    '19',
-    '20',
-    '21',
-    '22',
-    '23',
-    '24',
-    '25',
-    '26',
-    '27',
-    '28',
-    '29',
-    '30',
-    '31',
-    '32',
-    '33',
-    '34',
-    '35',
-    '36',
-    '37',
-    '38',
-    '39',
-    '40',
-    '41',
-    '42',
-    '43',
-    '44',
-    '45',
-    '46',
-    '47',
-    '48',
-    '49',
-    '50',
+  static const List<String> sex = ['Male', 'Female'];
+
+  static final List<String> ages = _generateAges();
+
+  static const String deptPrefix = 'College of ';
+  static const List<String> dept = [
+    '${deptPrefix}Allied Health Sciences (CAHS)',
+    '${deptPrefix}Arts and Sciences (CAS)',
+    '${deptPrefix}Criminal Justice Education (CCJE)',
+    '${deptPrefix}Education Liberal Arts (CELA)',
+    '${deptPrefix}Engineering and Architecture (CEA)',
+    '${deptPrefix}Information Technology Education (CITE)',
+    '${deptPrefix}Management and Accountancy (CMA)',
   ];
-  static const dept = [
-    'CAS - College of Arts and Sciences',
-    'CAHS - College of Allied Health Sciences',
-    'CEA - College of Engineering and Architecture',
-    'CELA - College of Education Liberal Arts',
-    'CCJE - College of Criminal Justice Education',
-    'CMA - College of Management and Accountancy',
-    'CITE - College of Information Technology Education',
-  ];
+
+  static List<String> _generateAges() {
+    return [for (int i = 18; i <= 70; i++) i.toString()];
+  }
 }

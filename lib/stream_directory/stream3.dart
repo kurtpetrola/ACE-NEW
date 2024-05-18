@@ -23,7 +23,7 @@ class _Stream3State extends State<Stream3> {
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(25))),
                 child: const Image(
-                  image: AssetImage('assets/images/banner img/banner2.jpg'),
+                  image: AssetImage('assets/images/banner/banner2.jpg'),
                 ),
               ),
 

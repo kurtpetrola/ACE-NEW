@@ -87,19 +87,20 @@ class _GradesState extends State<Grades> {
                   return DataRow(cells: [
                     DataCell(Text(subject['code'])),
                     DataCell(
-                      Container(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 16.0,
-                          vertical: 8.0,
-                        ),
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.white,
-                            width: 2.0,
+                      TextField(
+                        controller:
+                            TextEditingController(text: subject['grade']),
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide.none,
                           ),
-                          borderRadius: BorderRadius.circular(5.0),
                         ),
-                        child: Text(subject['grade']),
+                        keyboardType: TextInputType.number,
+                        onSubmitted: (value) {
+                          setState(() {
+                            subject['grade'] = value;
+                          });
+                        },
                       ),
                     ),
                   ]);

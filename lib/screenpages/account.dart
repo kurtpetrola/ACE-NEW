@@ -41,7 +41,7 @@ class _AccountState extends State<Account> {
                   final action = await AlertDialogs.yesCancelDialog(
                       context,
                       'Logout this account?',
-                      'you can always come back any time.');
+                      'You can always come back any time.');
                   if (action == DialogsAction.yes) {
                     setState(() => tappedYes = true);
                     _loginbox.put("isLoggedIn", false);
